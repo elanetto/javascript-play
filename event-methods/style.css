@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
 }
 
 .intro-right {
@@ -48,7 +50,7 @@ p {
 }
 
 .text-box {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 }
 
 #example-button {
