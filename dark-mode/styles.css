@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body, .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+body {
+    flex-direction: column;
+}
+
+.dark .light {
+    border-radius: 6px;
+    border-style: none;
+    background-color: darkslategrey;
+    color: white;
+}
