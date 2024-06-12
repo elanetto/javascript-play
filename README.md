@@ -5,6 +5,12 @@ This repo is made of all kinds of small projects, made by me (Anette) mainly to 
 
 I will also be playing around with HTML and CSS.
 
+## Projects found in this Repo:
+
+- Dark mode / light mode buttons
+- Load blurry background
+- Dropdown menu (not finished)
+
 
 
 
