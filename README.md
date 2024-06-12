@@ -10,6 +10,7 @@ I will also be playing around with HTML and CSS.
 - Dark mode / light mode buttons
 - Load blurry background
 - Dropdown menu (not finished)
+- Pop-up alert (event methods)
 
 
 
