@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/cfcc846d5b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle with me!</title>
+
+    <style>
+        .fa-solid {
+            cursor: pointer;
+        }
+
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Toggle</h1>
+    <p>Toggle this: <i id="eye" class="fa-solid fa-eye-slash"></i></p>
+    
+    <p>... and this: 
+        <span class="eye-container">
+            <i class="fa-solid fa-eye-slash hide"></i>
+            <i class="fa-solid fa-eye"></i>
+        </span>
+    </p>
+
+
+    <script>
+        const eyeEl = document.querySelector('#eye')
+
+        eyeEl.addEventListener("click", (e) => {
+            if (e.target.classList.contains("fa-eye-slash")){
+                e.target.classList.remove("fa-eye-slash")
+                e.target.classList.add("fa-eye")
+            }else {
+                e.target.classList.remove("fa-eye")
+                e.target.classList.add("fa-eye-slash")
+            }
+        })
+
+        const eyeContainerEl = document.querySelector('.eye-container')
+
+        eyeContainerEl.addEventListener("click", () => {
+            for(let i=0; i<eyeContainerEl.children.length; i++){
+                eyeContainerEl.children[i].classList.toggle("hide")
+            }
+        })
+    </script>
+</body>
+</html>
